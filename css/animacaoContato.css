@@ -1,0 +1,127 @@
+body {
+    overflow: hidden;
+}
+.pessoas {
+    border: black dashed 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.imagemPessoas{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 100% 100%;
+    grid-template-rows: 100% 100%;
+}
+.imagemPessoas img{
+    grid-area: 1 / 1;
+    width: 30vh;
+}
+.explosoes {
+    opacity: 0;
+    z-index: 1;
+    animation: explosao 3s reverse;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+#zanella {
+    opacity: 0;
+    position: relative;
+    left: -500px;
+    top: 600px;
+    animation: zanella 1s linear;
+    animation-fill-mode: forwards;
+}
+#schulz {
+    opacity: 0;
+    position: relative;
+    top: 600px;
+    animation: schulz 1s linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+#kuhn {
+    opacity: 0;
+    position: relative;
+    left: 500px;
+    top: 600px;
+    animation: kuhn 1s linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes explosao {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes zanella {
+    0% {
+        opacity: 0;
+        left: -500px;
+        top: 600px;
+        transform: rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        left: -100px;
+        top: 300px;
+        transform: rotate(1080deg);
+    }
+    100% {
+        opacity: 1;
+        left: 0px;
+        top: 0px;
+        transform: rotate(2160deg);
+    }
+}
+
+@keyframes schulz {
+    0% {
+        opacity: 0;
+        top: 600px;
+        transform: rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        top: 300px;
+        transform: rotate(1080deg);
+    }
+    100% {
+        opacity: 1;
+        top: 0px;
+        transform: rotate(2160deg);
+    }
+}
+@keyframes kuhn {
+    0% {
+        opacity: 0;
+        left: 500px;
+        top: 600px;
+        transform: rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        left: 100px;
+        top: 300px;
+        transform: rotate(1080deg);
+    }
+    100% {
+        opacity: 1;
+        left: 0px;
+        top: 0px;
+        transform: rotate(2160deg);
+    }
+}

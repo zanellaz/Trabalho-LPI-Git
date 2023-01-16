@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="img/gitico.ico">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <title>Git</title>
+    </head>
+    <body>
+        <header>
+            <ul class="menuPrincipal">
+                <li id="gitLocal"><a href="index.html" title="Página Inicial"><h1><img id="gitImage" src="img/gitIcon.png" alt="Página Inicial"></h1></a></li>
+                <li><a href="pagina1.html">História</a></li>
+                <li><a href="pagina2.html">Criador</a></li>
+                <li><a href="pagina3.html">Instalação</a></li>
+                <li><a href="pagina4.html">Uso</a></li>
+                <li><a href="pagina5.html">Branch</a></li>
+                <li><a href="pagina6.html">Git Fork</a></li>
+                <li><a href="pagina7.html">GitHub</a></li>
+                <li><a href="pagina8.html">Livro</a></li>
+                <li><a href="pagina9.html">Contatos</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <nav> 
+                <ul>
+                    <li><a href="#linux">Instalando no Linux</a></li>
+                    <li><a href="#mac">Instalando no Mac</a></li>
+                    <li><a href="#windows">Instalando no Windows</a></li>
+                </ul>
+            </nav>
+            <main>
+                <!--gambiarra pra funcionar o sumário-->
+                <div class="sumario" id="linux"></div>
+                <h2>Instalando o Git</h2>
+                <section>
+                    <h3>Instalando no Linux</h3>
+                    <p>
+                        Se você deseja instalar o Git no Linux através de um instalador binário, você 
+                        pode geralmente fazê-lo através da ferramenta básica de gerenciamento de pacotes que 
+                        vem com sua distribuição. Se você usar Fedora por exemplo, você pode usar o yum:
+                    </p>
+                    <code>
+                        $ sudo yum install git-all
+                    </code>
+                    <p>
+                        Se você usar uma distribuição baseada em Debian como o Ubuntu, use o apt-get:
+                    </p>
+                    <code>
+                        $ sudo apt-get install git-all
+                        <!--gambiarra pra funcionar o sumário-->
+                        <div class="sumario" id="mac"></div>
+                    </code>
+                    <p>
+                        Para mais opções de instruções de como instalar o Git em outros sistemas Unix, vá para
+                        a página oficial do Git: </br><a href="http://git-scm.com/download/linux" target="_blank">http://git-scm.com/download/linux</a>.
+                    </p>
+                </section>
+                <section>
+                    <h3>Instalando no Mac</h3>
+                    <p>
+                        Existem várias maneiras de instalar o Git em um Mac. O mais fácil é provavelmente
+                        instalar as ferramentas de linha de comando Xcode. No Mavericks (10,9) ou acima,
+                        você pode fazer isso simplesmente rodando git a partir do Terminal pela primeira
+                        vez. Se você não tiver o Git instalado, ele irá pedir-lhe para instalá-lo.
+                    </p>
+                    <p>
+                        Se você quiser uma versão mais atualizada, você também pode instalá-lo através de
+                        um instalador binário. Um instalador OSX Git é mantido e disponível para download
+                        no site do Git: </br><a href="http://git-scm.com/download/mac" target="_blank">http://git-scm.com/download/mac</a>.
+                    </p>
+                    <p>
+                        <div class="centerDiv">
+                            <img width="75%" style="border-radius:2%;" src="img/gitInstalador.png" alt="imagem ilustrando o instalador do Git no Mac" title="Instalador do Git no Mac">
+                        </div>
+                        <!--gambiarra pra funcionar o sumário-->
+                        <div class="sumario" id="windows"></div>
+                        Você também pode instalá-lo como parte do instalador GitHub para Mac. Sua ferramenta
+                        GUI Git tem uma opção para instalar as ferramentas de linha de comando. Você pode baixar 
+                        essa ferramenta a partir da página GitHub para Mac, clicando em: </br><a href="http://mac.github.com" target="_blank">http://mac.gitub.com</a>.
+                    </p>
+                </section>
+                <section>
+                    <h3>Instalando no Windows</h3>
+                    <p>
+                        Há também algumas maneiras de instalar o Git no Windows. A compilação mais oficial está
+                        disponível para download no site do Git. Vá para o site a seguir e instale a de sua preferência. </br><a href="http://git-scm.com/download/win" target="_blank">http://git-scm.com/download/win</a>
+                    </p>
+                </section>
+                <section>
+                    <h3>Fonte:</h3>
+                    <p>
+                        <a href="https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git" target="_blank">https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git</a>
+                    </p>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div class="centerDiv">
+                <hr>
+            </div>
+            <section>
+                <p>
+                    <img id="gitIconGrey" src="img/gitIconGrey.png" alt="ícone do Git">
+                    <small>
+                        Para mais informações: <a href="https://git-scm.com/" target="_blank">https://git-scm.com/</a>
+                    </small>
+                </p>
+                <p>
+                    <small>
+                        Site feito por: Artur Kuhn, Vitor Schulz, Gabriel Zanella
+                    </small>
+                </p>
+            </section>
+        </footer>
+    </body>
+</html>

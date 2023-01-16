@@ -1,0 +1,29 @@
+:root{
+    --bodyColor:#fafae7;
+}
+
+footer {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 100%;
+}
+footer section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+hr {
+    width: 75%;
+    margin: 3vh;
+    border-top: solid grey 1px;
+}
+footer section p {
+    display: flex;
+    align-items: center;
+}
+
+#gitIconGrey {
+    width: 3vw;
+    margin-right: 1vw;
+}

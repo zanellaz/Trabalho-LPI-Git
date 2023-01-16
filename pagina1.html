@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="img/gitico.ico">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <title>Git</title>
+    </head>
+    <body>
+        <header>
+            <ul class="menuPrincipal">
+                <li id="gitLocal"><a href="index.html" title="Página Inicial"><h1><img id="gitImage" src="img/gitIcon.png" alt="Página Inicial"></h1></a></li>
+                <li><a href="pagina1.html">História</a></li>
+                <li><a href="pagina2.html">Criador</a></li>
+                <li><a href="pagina3.html">Instalação</a></li>
+                <li><a href="pagina4.html">Uso</a></li>
+                <li><a href="pagina5.html">Branch</a></li>
+                <li><a href="pagina6.html">Git Fork</a></li>
+                <li><a href="pagina7.html">GitHub</a></li>
+                <li><a href="pagina8.html">Livro</a></li>
+                <li><a href="pagina9.html">Contatos</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <nav> 
+                <ul>
+                    <li><a href="#O Começo do Git">O Começo do Git</a></li>
+                    <li><a href="#Os Três Estados">Os Três Estados</a></li>
+                </ul>
+            </nav>
+            <main>
+                <!--gambiarra pra funcionar o sumário-->
+                <div class="sumario" id="O Começo do Git"></div>
+                <h2>Uma Breve História do Git</h2>
+                <section>
+                    <h3>O Começo do Git</h3>
+                    <p>
+                        Como muitas coisas na vida, o Git começou com um pouco de destruição criativa e uma ardente controvérsia.
+                        O núcleo (kernel) do Linux é um projeto de código aberto com um escopo bastante grande. 
+                        A maior parte da vida da manutenção do núcleo o Linux (1991-2002), as mudanças no código eram compartilhadas como correções e arquivos. 
+
+                        <p>Em 2002, o projeto do núcleo do Linux começou usar uma DVCS proprietária chamada BitKeeper.
+                        Em 2005, a relação entre a comunidade que desenvolveu o núcleo do Linux e a empresa que desenvolveu BitKeeper quebrou em pedaços, e a ferramenta passou a ser paga. 
+
+                    <p>Isto alertou a comunidade que desenvolvia o Linux (e especialmente <a href="pagina2.html">Linus Torvalds</a>, o criador do Linux) a desenvolver a sua própria ferramenta baseada em lições aprendidas ao usar o BitKeeper. 
+                        Algumas metas do novo sistema era os seguintes:</p>
+                    </p>
+                    <code>
+                    
+                        <p><li>Velocidade</li></p>
+                        <br>
+                        <p><li>Projeto simples</li></p>
+                        <br>
+                        <p><li>Forte suporte para desenvolvimento não-linear</li></p>
+                        <br>
+                        <p><li>Completamente distribuído</li></p>
+                        <br>
+                        <p><li>Capaz de lidar com projetos grandes como o núcleo o Linux com eficiência (velocidade e tamanho dos dados)</li></p>
+
+                    </code>
+
+                    <!--gambiarra pra funcionar o sumário-->
+                    <div class="sumario" id="Os Três Estados"></div>
+
+                    <p>Desde seu nascimento em 2005, Git evoluiu e amadureceu para ser fácil de usar e ainda reter essas qualidades iniciais. 
+                    <p>Ele é incrivelmente rápido, é muito eficiente com projetos grandes, e ele tem um incrível sistema de ramos para desenvolvimento não linear.</p>
+                    </p>
+                    <br>
+                    <br>
+                        <h3>
+                            Os Três Estados
+                        </h3>
+                    
+                        <p>O Git tem três estados principais que seus arquivos podem estar: committed, modificado (modified) e preparado (staged).</p>
+
+                        <code>
+                        <p><li>Committed significa que os dados estão armazenados de forma segura em seu banco de dados local. </p></li>
+                        <p><li>Modificado significa que você alterou o arquivo, mas ainda não fez o commit no seu banco de dados. </p></li>
+                        <p><li>Preparado significa que você marcou a versão atual de um arquivo modificado para fazer parte de seu próximo commit.</p></li>
+                        </code>
+                        <p>Isso nos leva a três seções principais de um projeto Git: o diretório Git, o diretório de trabalho e área de preparo.</p></li>
+                    
+                    
+                    <p>
+                        <img width="75%" style="border-radius:2%;" src="img/areas.png" alt="imagem ilustrando os três estados dos arquivos" title="Os três Estados">
+                    </p>
+                    
+                    <p> 
+                    Diretório de trabalho, área de preparo, e o diretório Git. 
+                    O diretório Git é onde o Git armazena os metadados e o banco de dados de objetos de seu projeto. 
+                    Esta é a parte mais importante do Git, e é o que é copiado quando você clona um repositório de outro computador.
+                    </p>
+        
+                    <h3>Fonte:</h3>
+                    <p>
+                        <a href="https://git-scm.com/book/pt-br/v2/Começando-O-Básico-do-Git" target="_blank">https://git-scm.com/book/pt-br/v2/Começando-O-Básico-do-Git</a>
+                    </p>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div class="centerDiv">
+                <hr>
+            </div>
+            <section>
+                <p>
+                    <img id="gitIconGrey" src="img/gitIconGrey.png" alt="ícone do Git">
+                    <small>
+                        Para mais informações: <a href="https://git-scm.com/" target="_blank">https://git-scm.com/</a>
+                    </small>
+                </p>
+                <p>
+                    <small>
+                        Site feito por: Artur Kuhn, Vitor Schulz, Gabriel Zanella
+                    </small>
+                </p>
+            </section>
+        </footer>
+    </body>
+</html>

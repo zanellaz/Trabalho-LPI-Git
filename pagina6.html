@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="img/gitico.ico">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <title>Git</title>
+    </head>
+    <body>
+        <header>
+            <ul class="menuPrincipal">
+                <li id="gitLocal"><a href="index.html" title="Página Inicial"><h1><img id="gitImage" src="img/gitIcon.png" alt="Página Inicial"></h1></a></li>
+                <li><a href="pagina1.html">História</a></li>
+                <li><a href="pagina2.html">Criador</a></li>
+                <li><a href="pagina3.html">Instalação</a></li>
+                <li><a href="pagina4.html">Uso</a></li>
+                <li><a href="pagina5.html">Branch</a></li>
+                <li><a href="pagina6.html">Git Fork</a></li>
+                <li><a href="pagina7.html">GitHub</a></li>
+                <li><a href="pagina8.html">Livro</a></li>
+                <li><a href="pagina9.html">Contatos</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <nav> 
+                <ul>
+                    <li><a href="#Oque é Fork">Oque é Fork</a></li>
+                    <li><a href="#Forking Workflow">Forking Workflow</a></li>
+                </ul>
+            </nav>
+            <main>
+                <!--gambiarra pra funcionar o sumário-->
+                <div class="sumario" id="Oque é Fork"></div>
+                <h2>Oque é Fork</h2>
+                <section>
+                    <h3>Fork</h3>
+
+                       <p>
+                        Fork nada mais é que uma cópia de um repositório. Esta cópia vira um clone do estado atual do repositório, 
+                        fazendo assim com que você possa experimentar mudanças e feature novas sem precisar utilizar o repositório principal.</p>
+
+                        <p>Outra coisa interessante antes de começar, é o fato de compreender o que é um Pull Request. 
+                            Pull requests, geralmente são funcionalidades providas por Empresas de versionamento de código como Github e Bitbucket. 
+                            </p>
+
+                        <p>
+                            Nada mais é que uma interface web amigável para você como desenvolvedor enviar/propor alterações em um repositório antes de integrar este código ao projeto oficial. 
+                            Fazendo com que esta funcionalidade seja discutida previamente, e quando aprovada pela equipe que mantém o projeto, pode ser integrada ao código principal. 
+                        </p>
+
+                        <p>
+                        É necessário salientar que o GIT não vê diferença entre os repositórios, na verdade tecnicamente você não tem como especificar quem é o repositório Oficial. 
+                        Isso é questão de entendimento entre os integrantes do projeto. Geralmente é criado uma organization no Github/Bitbucket que abriga os repositórios referentes ao projeto. 
+                        Tornando aqueles repositórios os “oficiais” em questão de organização. </p>
+                        
+                    
+                        <br>
+                        <!--gambiarra pra funcionar o sumário-->
+                        <div class="sumario" id="Forking Workflow"></div>
+
+                        <h3>Forking Workflow</h3>
+
+                        <p>Diferente dos outros workflows, ou da forma que os desenvolvedores aprendem inicialmente, geralmente com repositório centralizado e 
+                            onde todos os integrantes fazem commits direto no repositório principal, no Forking Workflow o usuário possui dois repositórios GIT no 
+                            Github/Bitbucket: um privado (pessoal) e um publico (principal/central).</p>
+                        
+                        <p>Sabe aquele conceito de “validação e aprovação” antes de aceitar contribuições em um projeto? Provavelmente como mantenedor de 
+                            um projeto você não vai querer que a qualidade do projeto caia. O foco deste workflow é baseado nesta hipótese.</p>
+
+                            <p>
+                            Colaboradores não precisam necessariamente de permissões para dar push no repositório oficial, assim podendo trabalhar paralelamente em seus Forks. 
+                            Após terminar uma feature, você pode submeter esta alteração através de um Pull Request para o repositório principal, 
+                            onde os mantenedores do projeto poderão validar se esta funcionalidade condiz com o projeto e se o código está consistente e bem escrito.
+                            </p>
+
+                            <p>
+                            E caso precise de alguma modificação, você pode continuar escrevendo em seu branch separado, fazendo com que alterações novas sejam agrupadas 
+                            no mesmo pull request referente aquele branch.</p>
+
+                            <p>
+                            O resultado de todo esse processo de workflow distribuído é um ambiente flexível e robusto, onde grandes e diferentes times 
+                            (incluindo pessoas não confiáveis) podem colaborar com o projeto de forma segura. 
+                            Forking Workflow é o workflow ideal para contribuição de projetos Open Source.
+                          </p>
+                            
+                          <br>
+                    <code>
+                        <ol>
+
+                        <p><li>$ mkdir [nome-do-projeto]/p></li>
+                        <br>
+
+                        <p><li>$ cd [nome-do-projeto]</li>
+                        <br>
+
+                        <p><li>$ git init</li>
+                        <br>
+
+                        <p><li>$ git remote add origin git@github.com:seu-username-ou-organizationname/git-fork-workflow-blog-post.git</li>
+                        <br>
+
+                        <p><li>$ git pull origin master</li>
+                        <br>
+                    
+
+                    </ol>
+                    </code>
+                     
+                        
+                        <p>Este exemplo descreve uma das formas de fazer clone, especificando o diretório no qual você quer fazer setup do diretório remoto. 
+                            É a forma mas utilizada quanto você começa o repositório localmente com alguns arquivos e deseja enviar todas as alterações para 
+                            o seu repositório no Github.</p>
+                           
+                         <p>Na primeira e segunda linha, estou apenas criando um diretório e entrando no mesmo.</p>
+
+                         <p>Na terceira linha estou iniciando um repositório, isso faz com que o GIT identifique que aquela pasta representa um projeto versionado.</p>
+
+                         <p>Na quarta linha estou adicionando uma referência da pasta ao repositório que eu criei no Github através do Fork.</p>
+
+                         <p>Por fim estou fazendo pull do repositório, fazendo com que o arquivo README criado pelo Github seja sincronizado na pasta. Bem simples não é?</p>
+
+                    <br>
+                    <p>
+                            <img width="75%" style="border-radius:2%;" src="img/Img 1.png" alt="demonstração do git fork no github" title="Img 1">
+                            <img width="25%" style="border-radius:2%;" src="img/Seta.png" alt="Seta para baixo" title="Seta">
+                            <img width="75%" style="border-radius:2%;" src="img/Img 2.png" alt="demonstração de compartilhamento de fork title="Img 2">
+                            <img width="25%" style="border-radius:2%;" src="img/Seta.png" alt="Seta para baixo" title="Seta">
+                            <img width="75%" style="border-radius:2%;" src="img/Img 3.png" alt="imagem mostrando fork já compartilhado" title="Img 3">
+                    </p>
+        
+                    <h3>Fonte:</h3>
+                    <p>
+                        <a href="https://medium.com/@pragmaticivan/forking-workflow-contribuindo-em-projetos-open-source-utilizando-git-parte-2-a1849204d02e#:~:text=Fork%20nada%20mais%20é%20que,precisar%20utilizar%20o%20repositório%20principal." target="_blank">https://medium.com/@pragmaticivan/forking-workflow-contribuindo-em-projetos-open-source-utilizando-git</a>
+                    </p>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div class="centerDiv">
+                <hr>
+            </div>
+            <section>
+                <p>
+                    <img id="gitIconGrey" src="img/gitIconGrey.png" alt="ícone do Git">
+                    <small>
+                        Para mais informações: <a href="https://git-scm.com/" target="_blank">https://git-scm.com/</a>
+                    </small>
+                </p>
+                <p>
+                    <small>
+                        Site feito por: Artur Kuhn, Vitor Schulz, Gabriel Zanella
+                    </small>
+                </p>
+            </section>
+        </footer>
+    </body>
+</html>

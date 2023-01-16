@@ -1,0 +1,74 @@
+:root{
+    --bodyColor:#fafae7;
+    --codeBackground:#fff1b9;
+    --borderColor: #ffe789;
+    --gitColor: #f14e32;
+}
+
+body {
+    background-color: var(--bodyColor);
+    font-family: Arial;
+}
+
+.content {
+    padding-top:10vh;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bodyColor);
+}
+
+main {
+    border-left: dashed #dddddd 2px;
+    width: 75%;     
+}
+
+main a {
+    color: #6c3716;
+    transition: color .2s;
+}
+
+main a:hover {
+    color: var(--gitColor);
+}
+
+.centerDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    padding-right: 15%;
+    padding-left: 15%;
+    text-align: justify;
+}
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 1em;
+    text-align: center
+}
+
+h3 {
+    text-align: left;
+    margin: 1em; 
+    margin-left: 4em;
+}
+
+p {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+code {
+    display: inline-block;
+    margin: .5em;
+    margin-left: 2em;
+    padding: .2em;
+    font-family: 'Courier New';
+    background-color: var(--codeBackground);
+}

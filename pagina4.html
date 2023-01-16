@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="img/gitico.ico">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <title>Git - Instalação</title>
+    </head>
+    <body>
+        <header>
+            <ul class="menuPrincipal">
+                <li id="gitLocal"><a href="index.html" title="Página Inicial"><h1><img id="gitImage" src="img/gitIcon.png" alt="Página Inicial"></h1></a></li>
+                <li><a href="pagina1.html">História</a></li>
+                <li><a href="pagina2.html">Criador</a></li>
+                <li><a href="pagina3.html">Instalação</a></li>
+                <li><a href="pagina4.html">Uso</a></li>
+                <li><a href="pagina5.html">Branch</a></li>
+                <li><a href="pagina6.html">Git Fork</a></li>
+                <li><a href="pagina7.html">GitHub</a></li>
+                <li><a href="pagina8.html">Livro</a></li>
+                <li><a href="pagina9.html">Contatos</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <nav> 
+                <ul>
+                    <li><a href="#comandosBasicos">Comandos Básicos</a></li>
+                    <li><a href="#pesquisarComandos">Pesquisar</a></li>                   
+                </ul>
+            </nav>
+            <main>
+                <!--gambiarra pra funcionar o sumário-->
+                <div class="sumario" id="comandosBasicos"></div>
+                <h2>Usando o Git</h2>
+                <section>
+                    <h3>Comandos básicos</h3>
+                    <p>
+                        Para fazer um bom uso do Git, é necessário saber alguns comandos básicos,
+                        aqui vai uma lista dos principais (e suas funções).
+                    </p>
+                </br>
+                    <code>
+                        git init
+                    </code>
+                    <p>
+                        Inicializa seu repositório Git
+                    </p>
+                </br>
+                    <code>
+                        git add [file]
+                    </code>
+                    <p>
+                        Adiciona arquivos que você quer incluir atualizações no próximo <em><strong>commit</strong></em>.
+                    </p>
+                </br>
+                    <code>
+                        git commit -m "message"
+                    </code>
+                    <p>
+                        Cria um ponto na história com a mensagem que você põe.
+                    </p>
+                </br>
+                    <code>
+                        git log
+                    </code>
+                    <p>
+                        Mostra o seu commit com as suas mudanças.
+                    </p>
+                </br>
+                    <code>
+                        git show [commit]
+                    </code>
+                    <p>
+                        Mostra os <em>commits</em> que você fez                    
+                    </p>
+                </br>
+                    <!--gambiarra pra funcionar o sumário-->
+                    <div class="sumario" id="pesquisarComandos"></div>
+                    <p>
+                        Para mais comandos, tente pesquisar no google <a href="https://www.google.com/search?q=comandos+b%C3%A1sicos+git" target="_blank">aqui</a> :D
+                    </p>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div class="centerDiv">
+                <hr>
+            </div>
+            <section>
+                <p>
+                    <img id="gitIconGrey" src="img/gitIconGrey.png" alt="ícone do Git">
+                    <small>
+                        Para mais informações: <a href="https://git-scm.com/">https://git-scm.com/</a>
+                    </small>
+                </p>
+                <p>
+                    <small>
+                        Site feito por: Artur Kuhn, Vitor Schulz, Gabriel Zanella
+                    </small>
+                </p>
+            </section>
+        </footer>
+    </body>
+</html>
